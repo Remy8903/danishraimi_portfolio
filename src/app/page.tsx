@@ -132,7 +132,9 @@ export default function Home() {
                 download
                 href="/Danish%20Raimi%20Resume%20(1).pdf"
               >
-                <span className="material-symbols-outlined text-sm">download</span>
+                <span className="material-symbols-outlined text-sm">
+                  download
+                </span>
                 Download Resume
               </a>
             </div>
@@ -157,13 +159,13 @@ export default function Home() {
               />
 
               {/* Tech tag accent */}
-              <div className="absolute bottom-6 right-6 bg-black/40 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 font-mono text-sm text-secondary">
+              {/*<div className="absolute bottom-6 right-6 bg-black/40 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 font-mono text-sm text-secondary">
                 {"< fullstack_dev />"}
-              </div>
+              </div>*/}
 
               {/* Decorative L-shaped frame accents */}
-              <div className="absolute top-6 right-6 w-20 h-20 border-t-2 border-r-2 border-primary rounded-tr-2xl shadow-[0_0_20px_rgba(173,198,255,0.4)]"></div>
-              <div className="absolute bottom-6 left-6 w-20 h-20 border-b-2 border-l-2 border-primary rounded-bl-2xl shadow-[0_0_20px_rgba(173,198,255,0.4)]"></div>
+              {/*<div className="absolute top-6 right-6 w-20 h-20 border-t-2 border-r-2 border-primary rounded-tr-2xl shadow-[0_0_20px_rgba(173,198,255,0.4)]"></div>
+              <div className="absolute bottom-6 left-6 w-20 h-20 border-b-2 border-l-2 border-primary rounded-bl-2xl shadow-[0_0_20px_rgba(173,198,255,0.4)]"></div>*/}
             </div>
           </div>
         </section>
@@ -214,7 +216,9 @@ export default function Home() {
         >
           <div className="flex flex-col gap-8">
             <h2 className="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary">work</span>{" "}
+              <span className="material-symbols-outlined text-primary">
+                work
+              </span>{" "}
               Experience
             </h2>
             <div className="relative pl-6 border-l-2 border-surface-variant">
@@ -233,16 +237,20 @@ export default function Home() {
                 </span>
                 <ul className="mt-2 list-disc list-inside text-on-surface-variant space-y-1">
                   <li>
-                    Developed and maintained core system modules utilizing
-                    Laravel and MySQL.
+                    Full-Stack Web Development: Developed application modules
+                    using Laravel, MySQL, API by following Agile practices.
                   </li>
                   <li>
-                    Successfully resolved over 30 technical helpdesk tickets,
-                    ensuring smooth operational flow.
+                    Technical Support: Resolved over 30+ helpdesk tickets by
+                    fixing software bugs, adjusting UI/UX layouts, and
+                    implementing client change requests for system CRM , ERP,
+                    Kamus DBP.
                   </li>
                   <li>
-                    Collaborated with senior engineers on database query
-                    optimization.
+                    Internal Systems: Co-engineered internal tools (eCV &
+                    eProject) to dynamically map staff profile structures to
+                    relational project metadata, automating internal resume
+                    generation workflows and reducing administrative overhead.
                   </li>
                 </ul>
               </div>
@@ -250,7 +258,9 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-8">
             <h2 className="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary">school</span>{" "}
+              <span className="material-symbols-outlined text-primary">
+                school
+              </span>{" "}
               Education
             </h2>
             <div className="relative pl-6 border-l-2 border-surface-variant flex flex-col gap-8">
@@ -314,7 +324,10 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="pb-8 px-margin-mobile md:px-margin-desktop" id="contact">
+      <footer
+        className="pb-8 px-margin-mobile md:px-margin-desktop"
+        id="contact"
+      >
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 bg-[#0a0f1d]/90 backdrop-blur-md border border-white/10 rounded-full px-6 py-4 shadow-lg shadow-black/20">
           <div className="font-mono text-xs text-on-surface-variant uppercase tracking-wider">
             © 2024 Danish Raimi. Built with precision.
@@ -326,7 +339,9 @@ export default function Home() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <span className="material-symbols-outlined text-lg">code_blocks</span>{" "}
+              <span className="material-symbols-outlined text-lg">
+                code_blocks
+              </span>{" "}
               GitHub
             </a>
             <a
@@ -335,14 +350,17 @@ export default function Home() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <span className="material-symbols-outlined text-lg">work_outline</span>{" "}
+              <span className="material-symbols-outlined text-lg">
+                work_outline
+              </span>{" "}
               LinkedIn
             </a>
             <a
               className="text-on-surface-variant hover:text-white transition-colors font-code-sm text-code-sm flex items-center gap-2 hover:scale-95 duration-100"
               href="mailto:danishraimi77@gmail.com"
             >
-              <span className="material-symbols-outlined text-lg">mail</span> Email
+              <span className="material-symbols-outlined text-lg">mail</span>{" "}
+              Email
             </a>
           </div>
         </div>

@@ -22,9 +22,8 @@ export default function Navbar() {
             className="flex items-center justify-center w-10 h-10 bg-white rounded-2xl text-[#0a0f1d] hover:opacity-90 transition-opacity shrink-0"
             href="#"
           >
-            <span className="material-symbols-outlined">public</span>
+            <span className="material-symbols-outlined">Folder</span>
           </Link>
-
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link, index) => (
@@ -41,7 +40,6 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
-
           {/* Email CTA */}
           <a
             className="hidden md:inline-flex items-center gap-2 bg-white text-[#0a0f1d] text-sm font-medium px-4 py-2 rounded-full hover:bg-white/90 transition-colors shrink-0"
@@ -49,7 +47,6 @@ export default function Navbar() {
           >
             danishraimi77@gmail.com
           </a>
-
           {/* Mobile menu button */}
           <button
             aria-expanded={mobileOpen}
