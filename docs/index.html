@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Danish Raimi - Software Engineer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-variant": "#2d3449",
+                        "outline": "#8c909f",
+                        "on-secondary-fixed": "#002113",
+                        "tertiary-fixed": "#e1e0ff",
+                        "surface-container-low": "#131b2e",
+                        "on-secondary-fixed-variant": "#005236",
+                        "on-tertiary": "#1000a9",
+                        "background": "#0b1326",
+                        "on-error": "#690005",
+                        "outline-variant": "#424754",
+                        "on-surface-variant": "#c2c6d6",
+                        "surface-tint": "#adc6ff",
+                        "secondary-container": "#00a572",
+                        "inverse-primary": "#005ac2",
+                        "on-secondary": "#003824",
+                        "on-primary": "#002e6a",
+                        "surface-bright": "#31394d",
+                        "on-primary-fixed-variant": "#004395",
+                        "on-tertiary-fixed-variant": "#2f2ebe",
+                        "on-tertiary-fixed": "#07006c",
+                        "surface-container": "#171f33",
+                        "error-container": "#93000a",
+                        "on-tertiary-container": "#0d0096",
+                        "surface-container-high": "#222a3d",
+                        "surface-container-lowest": "#060e20",
+                        "tertiary": "#c0c1ff",
+                        "error": "#ffb4ab",
+                        "on-primary-fixed": "#001a42",
+                        "secondary-fixed": "#6ffbbe",
+                        "primary-fixed": "#d8e2ff",
+                        "on-secondary-container": "#00311f",
+                        "primary": "#adc6ff",
+                        "inverse-on-surface": "#283044",
+                        "secondary-fixed-dim": "#4edea3",
+                        "surface-container-highest": "#2d3449",
+                        "surface-dim": "#0b1326",
+                        "on-surface": "#dae2fd",
+                        "inverse-surface": "#dae2fd",
+                        "tertiary-container": "#8083ff",
+                        "on-error-container": "#ffdad6",
+                        "primary-container": "#4d8eff",
+                        "surface": "#0b1326",
+                        "on-background": "#dae2fd",
+                        "secondary": "#4edea3",
+                        "on-primary-container": "#00285d",
+                        "primary-fixed-dim": "#adc6ff",
+                        "tertiary-fixed-dim": "#c0c1ff"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "container-max": "1200px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "unit": "4px",
+                        "gutter": "24px"
+                    },
+                    fontFamily: {
+                        "body-lg": ["Inter"],
+                        "display-lg-mobile": ["JetBrains Mono"],
+                        "label-caps": ["JetBrains Mono"],
+                        "display-lg": ["JetBrains Mono"],
+                        "headline-md": ["JetBrains Mono"],
+                        "body-md": ["Inter"],
+                        "code-sm": ["JetBrains Mono"]
+                    },
+                    fontSize: {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "code-sm": ["14px", { "lineHeight": "1.4", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .dot-matrix {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .glow-active:hover {
+            box-shadow: 0 0 15px rgba(173, 198, 255, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen dot-matrix">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/10 flex justify-between items-center h-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-on-surface tracking-tighter" href="#">Danish Raimi</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#about">About</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#experience">Experience</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#projects">Projects</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#contact">Contact</a>
+<button class="bg-primary text-on-primary font-code-sm text-code-sm py-2 px-4 rounded hover:opacity-80 transition-all duration-150">Resume</button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col gap-32">
+<!-- Hero Section -->
+<section class="flex flex-col md:flex-row gap-12 items-center min-h-[614px]" id="about">
+<div class="flex-1 flex flex-col gap-6">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest inline-flex items-center gap-2 mb-4">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                        Bachelor of Software Engineering, USM
+                    </span>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-4">
+                        Crafting scalable full-stack architectures &amp; high-performance solutions.
+                    </h1>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    I am a Software Engineer focused on building robust backends, intuitive interfaces, and optimized database solutions. Currently exploring advanced cloud deployments and modern framework architectures.
+                </p>
+<div class="flex gap-4 mt-4">
+<a class="bg-primary text-on-primary font-code-sm text-code-sm py-3 px-6 rounded font-medium hover:bg-primary-fixed-dim transition-colors flex items-center gap-2" href="#projects">
+                        View My Work <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="border border-primary text-primary font-code-sm text-code-sm py-3 px-6 rounded font-medium hover:bg-primary/10 transition-colors" href="#">
+                        Download Resume
+                    </a>
+</div>
+</div>
+<div class="flex-1 relative w-full aspect-square md:aspect-auto md:h-96">
+<div class="absolute inset-0 bg-surface-container border border-white/10 rounded-xl overflow-hidden backdrop-blur-md">
+<div class="bg-cover bg-center w-full h-full opacity-60" data-alt="A moody, high-contrast, dark-mode terminal setup. Multiple monitors glowing softly with lines of code. Subtle blue accent lighting illuminates the sleek, industrial mechanical keyboard and mouse. The aesthetic is clean, technical, and professional." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZxD2siYGhFV334G8luXo5bUScj7U7v4O1dUseuYt9Zje6Pa1i24GU2oY47L7_bl61xqwSi0Uz7URltQWbROv0PGlM30CHnGsCq6IhXbgLdXxH-ApkUsuHm6l7fQ_-iGVT_Zp5-jdY8GJXlEtvERSkgxls2RzPAKtR3vsDzy9WnF7YefKW4o2GqbtnT08kBfhDu-IqlwDkMLM9grzOp1Zk388xGolFValIEMJA2LCf2p-7P6BB_GHZfgLwe8mrFJkhi9rR-PdUwER0')"></div>
+</div>
+</div>
+</section>
+<!-- Tech Stack (Bento Grid) -->
+<section class="flex flex-col gap-8">
+<h2 class="font-headline-md text-headline-md text-on-surface">Technical Arsenal</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="col-span-1 md:col-span-2 bg-surface-container border border-white/10 rounded-xl p-6 glow-active transition-all">
+<div class="flex items-center gap-2 mb-4 text-primary">
+<span class="material-symbols-outlined">code</span>
+<h3 class="font-code-sm text-code-sm uppercase tracking-wider">Languages &amp; Frontend</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded font-code-sm text-code-sm">HTML/CSS</span>
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded font-code-sm text-code-sm">JavaScript</span>
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded font-code-sm text-code-sm">TypeScript</span>
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded font-code-sm text-code-sm">PHP</span>
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded font-code-sm text-code-sm">Python</span>
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded font-code-sm text-code-sm">Java</span>
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded font-code-sm text-code-sm">C++</span>
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded font-code-sm text-code-sm">SQL</span>
+<div class="w-full h-px bg-white/5 my-2"></div>
+<span class="border border-primary/30 text-primary px-3 py-1 rounded font-code-sm text-code-sm">React.js</span>
+<span class="border border-primary/30 text-primary px-3 py-1 rounded font-code-sm text-code-sm">Next.js</span>
+<span class="border border-primary/30 text-primary px-3 py-1 rounded font-code-sm text-code-sm">Flutter</span>
+<span class="border border-primary/30 text-primary px-3 py-1 rounded font-code-sm text-code-sm">TailwindCSS</span>
+<span class="border border-primary/30 text-primary px-3 py-1 rounded font-code-sm text-code-sm">Livewire</span>
+</div>
+</div>
+<div class="bg-surface-container border border-white/10 rounded-xl p-6 glow-active transition-all">
+<div class="flex items-center gap-2 mb-4 text-secondary">
+<span class="material-symbols-outlined">dns</span>
+<h3 class="font-code-sm text-code-sm uppercase tracking-wider">Backend &amp; DevOps</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded font-code-sm text-code-sm">Laravel</span>
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded font-code-sm text-code-sm">Express.js</span>
+<div class="w-full h-px bg-white/5 my-2"></div>
+<span class="border border-secondary/30 text-secondary px-3 py-1 rounded font-code-sm text-code-sm">Docker</span>
+<span class="border border-secondary/30 text-secondary px-3 py-1 rounded font-code-sm text-code-sm">Ubuntu / VPS</span>
+<span class="border border-secondary/30 text-secondary px-3 py-1 rounded font-code-sm text-code-sm">Google Cloud</span>
+<span class="border border-secondary/30 text-secondary px-3 py-1 rounded font-code-sm text-code-sm">DigitalOcean</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects -->
+<section class="flex flex-col gap-8" id="projects">
+<h2 class="font-headline-md text-headline-md text-on-surface">Featured Projects</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Project 1 -->
+<div class="group bg-surface-container border border-white/10 hover:border-primary rounded-xl overflow-hidden transition-all duration-300">
+<div class="h-48 bg-surface-variant overflow-hidden relative">
+<div class="bg-cover bg-top w-full h-full opacity-70 group-hover:opacity-100 transition-opacity" data-alt="A sleek, modern e-commerce dashboard interface displayed on a dark monitor. The UI features clean charts, inventory tables, and minimal typography with subtle blue accents. The scene is shot with shallow depth of field in a dimly lit studio." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWnrirsh9Fmyzytn7_MPrpTdou6vy7d4Cu8doRPvKRU7mYAFTK1V_YJcuaZ35cCeHgIt5XXVJnnqSgTrC8t5O4kpSroFFxVYeGD0_u3LQT_vLj9r75Cl8Km2mbzwJixBwoNBforSmvzmetapEzU5BHg8dwuOXtXp2_uFTyVOod8C5DysWlQtYGRgxvpFEMEoOXny6sh1fvN2qf4yu0Jr5k9KWgfQ9T3JEbQqoGJ9V0W7z-1KF_6Fk7eLUjFqseb0S5BQyg6sJoZy0D')"></div>
+</div>
+<div class="p-6 flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-headline-md">BizMudah</h3>
+<a class="text-outline hover:text-primary" href="#"><span class="material-symbols-outlined">open_in_new</span></a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Ecommerce platform for Microsellers. Features real-time stock management and automated invoicing workflows.</p>
+<div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5">
+<span class="font-code-sm text-code-sm text-primary">Laravel 12</span>
+<span class="font-code-sm text-code-sm text-primary">Livewire</span>
+<span class="font-code-sm text-code-sm text-primary">Docker</span>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group bg-surface-container border border-white/10 hover:border-primary rounded-xl overflow-hidden transition-all duration-300">
+<div class="h-48 bg-surface-variant overflow-hidden relative">
+<div class="bg-cover bg-top w-full h-full opacity-70 group-hover:opacity-100 transition-opacity" data-alt="A digital dictionary and language reference web application interface on a tablet. The design is stark, using deep blacks and white text. A glowing secure payment icon is subtly integrated into the layout. High contrast, professional aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBeBGoD1IbkiJjnFzajS5XmTdd1lztGH-HPCmZLPToUrG3ERlgoyT2vdPhsfQHFFVEdp617W59mJUWpOPAptcPigBIlPHi92Wd5dD9d3y9IxOsNhB43NJea2GLEP90pCw3L9E1rr_2TEiXefLlxLK8d2bI4l0iUXSiOLHkg7nFzaelV1Bc45j8Tx03IaWJWh6hUkuUwXul4HHtrXpDEbpZJ86KdgsutaEusjKhaxGWospvgeZ9CAolle8Iu4nTu1568ju64IcBnMc_n')"></div>
+</div>
+<div class="p-6 flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-headline-md">Kamus Dewan Perdana</h3>
+<a class="text-outline hover:text-primary" href="#"><span class="material-symbols-outlined">open_in_new</span></a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Language Reference Platform integration. Developed secure payment gateways and complex database queries.</p>
+<div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5">
+<span class="font-code-sm text-code-sm text-primary">PHP</span>
+<span class="font-code-sm text-code-sm text-primary">Oracle DB</span>
+<span class="font-code-sm text-code-sm text-primary">eGHL</span>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group bg-surface-container border border-white/10 hover:border-primary rounded-xl overflow-hidden transition-all duration-300">
+<div class="p-6 flex flex-col gap-4 h-full">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-headline-md">SiswaJual</h3>
+<span class="material-symbols-outlined text-outline">shopping_bag</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">A specialized marketplace for university students. Engineered with a strong focus on secure authentication and data validation.</p>
+<div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5">
+<span class="font-code-sm text-code-sm text-primary">Laravel</span>
+<span class="font-code-sm text-code-sm text-primary">PHP</span>
+<span class="font-code-sm text-code-sm text-primary">MySQL</span>
+</div>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="group bg-surface-container border border-white/10 hover:border-primary rounded-xl overflow-hidden transition-all duration-300">
+<div class="p-6 flex flex-col gap-4 h-full">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-headline-md">USM-EMS</h3>
+<span class="material-symbols-outlined text-outline">event</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Comprehensive Event Management System mobile application. Implemented real-time database sync and user roles.</p>
+<div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5">
+<span class="font-code-sm text-code-sm text-primary">Flutter</span>
+<span class="font-code-sm text-code-sm text-primary">Firebase</span>
+<span class="font-code-sm text-code-sm text-primary">Supabase</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience & Education -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-16" id="experience">
+<div class="flex flex-col gap-8">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">work</span> Experience
+                </h2>
+<div class="relative pl-6 border-l-2 border-surface-variant">
+<div class="absolute w-3 h-3 bg-secondary rounded-full -left-[7px] top-2"></div>
+<div class="flex flex-col gap-2">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+<h3 class="font-body-lg text-body-lg font-semibold">Software Engineering Intern</h3>
+<span class="font-code-sm text-code-sm text-outline">March 2025 - Sept 2025</span>
+</div>
+<span class="font-code-sm text-code-sm text-primary">Zeta Integrated Solution</span>
+<ul class="mt-2 list-disc list-inside text-on-surface-variant space-y-1">
+<li>Developed and maintained core system modules utilizing Laravel and MySQL.</li>
+<li>Successfully resolved over 30 technical helpdesk tickets, ensuring smooth operational flow.</li>
+<li>Collaborated with senior engineers on database query optimization.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-8">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">school</span> Education
+                </h2>
+<div class="relative pl-6 border-l-2 border-surface-variant flex flex-col gap-8">
+<!-- USM -->
+<div class="relative">
+<div class="absolute w-3 h-3 bg-surface-variant border-2 border-background rounded-full -left-[31px] top-2"></div>
+<div class="flex flex-col gap-1">
+<h3 class="font-body-lg text-body-lg font-semibold">Bachelor of Software Engineering</h3>
+<span class="font-code-sm text-code-sm text-primary">Universiti Sains Malaysia (USM)</span>
+<span class="font-code-sm text-code-sm text-outline mt-1">GPA: 3.06</span>
+</div>
+</div>
+<!-- Matrikulasi -->
+<div class="relative">
+<div class="absolute w-3 h-3 bg-surface-variant border-2 border-background rounded-full -left-[31px] top-2"></div>
+<div class="flex flex-col gap-1">
+<h3 class="font-body-lg text-body-lg font-semibold">Foundation in Science</h3>
+<span class="font-code-sm text-code-sm text-primary">Matrikulasi Melaka</span>
+<span class="font-code-sm text-code-sm text-outline mt-1">CGPA: 3.93 | Dean's List</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-gutter" id="contact">
+<div class="font-label-caps text-label-caps text-outline">
+            © 2024 Danish Raimi. Built with precision.
+        </div>
+<div class="flex gap-6">
+<a class="text-outline hover:text-on-surface transition-colors font-code-sm text-code-sm flex items-center gap-2 hover:scale-95 duration-100" href="https://github.com/Remy8903">
+<span class="material-symbols-outlined text-lg">code_blocks</span> GitHub
+            </a>
+<a class="text-outline hover:text-on-surface transition-colors font-code-sm text-code-sm flex items-center gap-2 hover:scale-95 duration-100" href="https://linkedin.com/in/danishraimi">
+<span class="material-symbols-outlined text-lg">work_outline</span> LinkedIn
+            </a>
+<a class="text-outline hover:text-on-surface transition-colors font-code-sm text-code-sm flex items-center gap-2 hover:scale-95 duration-100" href="mailto:danishraimi77@gmail.com">
+<span class="material-symbols-outlined text-lg">mail</span> Email
+            </a>
+</div>
+</footer>
+</body></html>
