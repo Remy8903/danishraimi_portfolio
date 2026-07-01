@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import ThemeProvider from "./_components/ThemeProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -26,7 +27,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${jetbrainsMono.variable} dark`}
+      className={`${inter.variable} ${jetbrainsMono.variable}`}
+      suppressHydrationWarning
     >
       {/* eslint-disable-next-line @next/next/no-page-custom-font */}
       <link
@@ -35,7 +37,9 @@ export default function RootLayout({
         rel="stylesheet"
       />
       <body className="bg-background text-on-surface font-body-md antialiased min-h-screen dot-matrix">
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -128,7 +128,7 @@ export default function Home() {
                 </span>
               </Link>
               <a
-                className="bg-[#0a0f1d] border border-white/10 text-on-surface font-medium py-3 px-6 rounded-full hover:bg-white/5 transition-colors flex items-center gap-2"
+                className="bg-surface-container border border-outline/10 text-on-surface font-medium py-3 px-6 rounded-full hover:bg-surface-container-high transition-colors flex items-center gap-2"
                 download
                 href="/Danish%20Raimi%20Resume%20(1).pdf"
               >
@@ -328,13 +328,13 @@ export default function Home() {
         className="pb-8 px-margin-mobile md:px-margin-desktop"
         id="contact"
       >
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 bg-[#0a0f1d]/90 backdrop-blur-md border border-white/10 rounded-full px-6 py-4 shadow-lg shadow-black/20">
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 bg-surface-container/90 backdrop-blur-md border border-outline/10 rounded-full px-6 py-4 shadow-lg shadow-black/10">
           <div className="font-mono text-xs text-on-surface-variant uppercase tracking-wider">
             © 2024 Danish Raimi. Built with precision.
           </div>
           <div className="flex gap-6">
             <a
-              className="text-on-surface-variant hover:text-white transition-colors font-code-sm text-code-sm flex items-center gap-2 hover:scale-95 duration-100"
+              className="text-on-surface-variant hover:text-on-surface transition-colors font-code-sm text-code-sm flex items-center gap-2 hover:scale-95 duration-100"
               href="https://github.com/Remy8903"
               rel="noopener noreferrer"
               target="_blank"
@@ -345,7 +345,7 @@ export default function Home() {
               GitHub
             </a>
             <a
-              className="text-on-surface-variant hover:text-white transition-colors font-code-sm text-code-sm flex items-center gap-2 hover:scale-95 duration-100"
+              className="text-on-surface-variant hover:text-on-surface transition-colors font-code-sm text-code-sm flex items-center gap-2 hover:scale-95 duration-100"
               href="https://linkedin.com/in/danishraimi"
               rel="noopener noreferrer"
               target="_blank"
@@ -356,7 +356,7 @@ export default function Home() {
               LinkedIn
             </a>
             <a
-              className="text-on-surface-variant hover:text-white transition-colors font-code-sm text-code-sm flex items-center gap-2 hover:scale-95 duration-100"
+              className="text-on-surface-variant hover:text-on-surface transition-colors font-code-sm text-code-sm flex items-center gap-2 hover:scale-95 duration-100"
               href="mailto:danishraimi77@gmail.com"
             >
               <span className="material-symbols-outlined text-lg">mail</span>{" "}

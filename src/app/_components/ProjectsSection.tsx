@@ -112,7 +112,7 @@ export default function ProjectsSection() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="group relative text-left bg-surface-container border border-white/10 hover:border-primary rounded-xl overflow-hidden transition-all duration-300 cursor-pointer"
+              className="group relative text-left bg-surface-container border border-outline/10 hover:border-primary rounded-xl overflow-hidden transition-all duration-300 cursor-pointer"
               onClick={() => openModal(project)}
               onKeyDown={(event) => {
                 if (event.key === "Enter" || event.key === " ") {
@@ -171,7 +171,7 @@ export default function ProjectsSection() {
                     {project.githubUrl ? (
                       <a
                         aria-label={`${project.title} GitHub repository`}
-                        className="text-outline hover:text-primary transition-colors inline-flex p-1 rounded hover:bg-white/5"
+                        className="text-outline hover:text-primary transition-colors inline-flex p-1 rounded hover:bg-surface-container-high"
                         href={project.githubUrl}
                         onClick={(event) => event.stopPropagation()}
                         rel="noopener noreferrer"
@@ -189,7 +189,7 @@ export default function ProjectsSection() {
                     {project.websiteUrl && project.websiteUrl !== "#" ? (
                       <a
                         aria-label={`${project.title} live website`}
-                        className="text-outline hover:text-primary transition-colors inline-flex p-1 rounded hover:bg-white/5"
+                        className="text-outline hover:text-primary transition-colors inline-flex p-1 rounded hover:bg-surface-container-high"
                         href={project.websiteUrl}
                         onClick={(event) => event.stopPropagation()}
                         rel="noopener noreferrer"
@@ -211,7 +211,7 @@ export default function ProjectsSection() {
                 <p className="font-body-md text-body-md text-on-surface-variant">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5">
+                <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-outline/5">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}

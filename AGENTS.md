@@ -21,6 +21,7 @@ Next.js 16 App Router portfolio. Visual-design source of truth is `docs/index.ht
 - **Tailwind v4**, CSS-first config via `@theme inline` in `src/app/globals.css`. No `tailwind.config.js`. `docs/index.html` defines a Material Design 3 palette and custom font/sizes in v3 JS form — port those into `@theme` blocks, not verbatim.
 - **Fonts:** `Inter` and `JetBrains Mono` are loaded via `next/font/google` in `src/app/layout.tsx`. `Material Symbols Outlined` is the one exception and is loaded via a `<link>` tag (with `// eslint-disable-next-line @next/next/no-page-custom-font`).
 - **Path alias:** `@/*` → `./src/*` (tsconfig). App code lives under `src/app/`.
+- **Theming:** `next-themes` provides the dark/light toggle. Theme class is applied to `<html>`; Tailwind `dark:` variants work via `@custom-variant dark` in `src/app/globals.css`. Color tokens are CSS variables that swap between `:root` (light) and `.dark` palettes.
 - **next.config.ts** is currently empty. Local images in `public/` work with `next/image` as-is; add `remotePatterns` only if you switch to remote assets.
 
 ## Conventions

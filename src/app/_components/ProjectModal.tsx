@@ -93,7 +93,7 @@ function ProjectMediaGallery({ project }: { project: Project }) {
               className={`relative w-16 h-16 rounded-md overflow-hidden shrink-0 border-2 transition-colors ${
                 index === activeIndex
                   ? "border-primary"
-                  : "border-transparent hover:border-white/20"
+                  : "border-transparent hover:border-outline/20"
               }`}
               onClick={() => setActiveIndex(index)}
               type="button"
@@ -159,7 +159,7 @@ export default function ProjectModal({
       />
 
       {/* Modal */}
-      <div className="relative w-full max-w-2xl max-h-[85vh] overflow-y-auto bg-surface-container border border-white/10 rounded-xl p-6 md:p-8 shadow-2xl">
+      <div className="relative w-full max-w-2xl max-h-[85vh] overflow-y-auto bg-surface-container border border-outline/10 rounded-xl p-6 md:p-8 shadow-2xl">
         <button
           aria-label="Close"
           autoFocus
@@ -191,7 +191,7 @@ export default function ProjectModal({
           ))}
         </div>
 
-        <div className="border-t border-white/5 pt-6">
+        <div className="border-t border-outline/5 pt-6">
           <h4 className="font-code-sm text-code-sm uppercase tracking-wider text-primary mb-3">
             Project Details
           </h4>
@@ -205,7 +205,7 @@ export default function ProjectModal({
           </ul>
         </div>
 
-        <div className="flex flex-wrap gap-4 mt-8 pt-6 border-t border-white/5">
+        <div className="flex flex-wrap gap-4 mt-8 pt-6 border-t border-outline/5">
           {project.websiteUrl && project.websiteUrl !== "#" ? (
             <a
               className="bg-primary text-on-primary font-code-sm text-code-sm py-3 px-6 rounded font-medium hover:bg-primary-fixed-dim transition-colors flex items-center gap-2"
@@ -245,7 +245,7 @@ export default function ProjectModal({
             </a>
           ) : null}
           <button
-            className="border border-outline text-outline font-code-sm text-code-sm py-3 px-6 rounded font-medium hover:bg-white/5 transition-colors"
+            className="border border-outline text-outline font-code-sm text-code-sm py-3 px-6 rounded font-medium hover:bg-surface-container-high transition-colors"
             onClick={onClose}
             type="button"
           >
