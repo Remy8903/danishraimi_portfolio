@@ -127,12 +127,14 @@ export default function Home() {
                   arrow_forward
                 </span>
               </Link>
-              <Link
-                className="bg-[#0a0f1d] border border-white/10 text-on-surface font-medium py-3 px-6 rounded-full hover:bg-white/5 transition-colors"
-                href="#"
+              <a
+                className="bg-[#0a0f1d] border border-white/10 text-on-surface font-medium py-3 px-6 rounded-full hover:bg-white/5 transition-colors flex items-center gap-2"
+                download
+                href="/Danish%20Raimi%20Resume%20(1).pdf"
               >
+                <span className="material-symbols-outlined text-sm">download</span>
                 Download Resume
-              </Link>
+              </a>
             </div>
 
             <div className="mt-auto pt-12 flex items-center gap-3 text-on-surface-variant/40 font-mono text-[10px] uppercase tracking-[0.15em]">
